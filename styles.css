@@ -996,7 +996,7 @@ main {
   padding-block: 2rem;
   padding-inline: 4rem;
   font-family: var(--font-family-body);
-  max-width: min(1085px, 100%);
+  max-width: min(1150px, 100%);
   margin-inline: auto;
 }
 .reviews__swiper{
@@ -1014,6 +1014,7 @@ main {
 }
 .reviews__wrapper .swiper-wrapper{
   display: flex;
+  width: 100%;
 }
 .reviews__wrapper .swiper-slide{
   flex-shrink: 0;
@@ -1021,7 +1022,8 @@ main {
   border-radius: var(--border-radius-sm);
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
   padding: 1.5rem 2rem;
-  max-width: max-content;
+  margin-inline: 1rem;
+  max-width: calc(100% / 3 - 2rem);
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -1643,7 +1645,7 @@ dialog .wrapper{
     width: min(500px,95%);
   }
   .cta__payment-badges img{
-    max-width: 200px;
+    max-width: 300px;
   }
   .auth__logos{
     padding-inline: .25rem;
@@ -1683,11 +1685,14 @@ dialog .wrapper{
     gap: 1rem;
   }
   .shipping__flex{
-    padding-inline: .25rem;
+    padding-inline: .5rem;
   }
   .reviews__wrapper{
     padding-inline: 2.5rem;
     max-width: min(750px, 100%);
+  }
+  .reviews__wrapper .swiper-slide {
+    max-width: calc(100% / 2 - 2rem); /* Adjust based on slidesPerView and margin */
   }
   .faq__content{
     margin-inline: auto;
@@ -1777,6 +1782,10 @@ dialog .wrapper{
   .reviews__wrapper{
     padding-inline: 2.5rem;
   }
+  .reviews__wrapper .swiper-slide {
+    max-width: calc(100% / 1 - 2rem); /* Adjust based on slidesPerView and margin */
+  }
+  
   .auth__wrapper{
     flex-direction: column;
     row-gap: 1rem;
@@ -1796,9 +1805,10 @@ dialog .wrapper{
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    align-items: center;
   }
   .faq__content{
-    max-width: 100%;
+    max-width: 95%;
   }
   .footer__wrapper ul li:not(:last-child){
     padding-inline: .5rem;

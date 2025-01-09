@@ -33,7 +33,6 @@ const mainSwiper = new Swiper('.cta__flex-main', {
   // For another carousel later down the page
   const secondSwiper = new Swiper('.reviews__swiper', {
     slidesPerView: 3,
-    spaceBetween: 30,
     centeredSlides: true,
     loop: false,
     rewind: true,
