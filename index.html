@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Page Transition Boilerplate</title>
+    <script src="/main.js" defer></script>
+    <script src="/quiz.js" defer></script>
+    <script src="/variant-selector.js" defer></script>
+    <script src="/swiper-carousel.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Page Containers -->
+      <div data-page="1" data-visible="active">
+        <div class="page__body">
+          <header class="quiz__header">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2292/4453/files/jpr5-logo_250x.png?v=1614310439"
+              alt=""
+            />
+          </header>
+          <div class="quiz__wrapper">
+            <div
+              class="quiz__body"
+              data-question="1"
+              data-visible="active"
+              data-quiz-action="next-question"
+            >
+              <h1>1 of 3</h1>
+              <p>How often is your body in pain?</p>
+              <!-- radial buttons -->
+              <div class="quiz__options">
+                <label for="question-1-option-1">
+                  <input
+                    type="radio"
+                    name="question-1"
+                    id="question-1-option-1"
+                    value="Not-Often"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/2292/4453/files/Happy_150x.png?v=1736369128"
+                    alt="Cartoon Face: Smile"
+                  />
+                  <span>Not often</span>
+                </label>
+                <label for="question-1-option-2">
+                  <input
+                    type="radio"
+                    name="question-1"
+                    id="question-1-option-2"
+                    value="Sometimes"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/2292/4453/files/Bothered_150x.png?v=1736369128"
+                    alt="Cartoon Face: Neutral"
+                  />
+                  <span>Sometimes</span>
+                </label>
+                <label for="question-1-option-3">
+                  <input
+                    type="radio"
+                    name="question-1"
+                    id="question-1-option-3"
+                    value="Very-Often"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pissed_1_150x.png?v=1736369129"
+                    alt="Cartoon Face: Frown"
+                  />
+                  <span>Very often</span>
+                </label>
+              </div>
+              <button class="quiz__skip" data-action="open-next">
+                Skip this step
+              </button>
+            </div>
+            <div
+              class="quiz__body"
+              data-question="2"
+              data-visible="hidden"
+              data-quiz-action="next-question"
+            >
+              <h1>2 of 3</h1>
+              <p>What part of your body hurts the most?</p>
+              <!-- radial buttons -->
+              <div class="quiz__options">
+                <label for="question-2-option-1">
+                  <input
+                    type="radio"
+                    name="question-2"
+                    id="question-2-option-1"
+                    value="Knees"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Body: Knee Pain"
+                  />
+                  <span>Knees</span>
+                </label>
+
+                <label for="question-2-option-2">
+                  <input
+                    type="radio"
+                    name="question-2"
+                    id="question-2-option-2"
+                    value="Hips"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Body: Hip Pain"
+                  />
+                  <span>Hips</span>
+                </label>
+
+                <label for="question-2-option-3">
+                  <input
+                    type="radio"
+                    name="question-2"
+                    id="question-2-option-3"
+                    value="Elbows"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Body: Elbow Pain"
+                  />
+                  <span>Elbows</span>
+                </label>
+
+                <label for="question-2-option-4">
+                  <input
+                    type="radio"
+                    name="question-2"
+                    id="question-2-option-4"
+                    value="back"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Body: Back Pain"
+                  />
+                  <span>Back</span>
+                </label>
+
+                <label for="question-2-option-5">
+                  <input
+                    type="radio"
+                    name="question-2"
+                    id="question-2-option-5"
+                    value="Other"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Body: Other Pain"
+                  />
+                  <span>Other</span>
+                </label>
+              </div>
+              <button class="quiz__skip" data-action="open-next">
+                Skip this step
+              </button>
+            </div>
+            <div
+              class="quiz__body"
+              data-question="3"
+              data-visible="hidden"
+              data-quiz-action="finish-quiz"
+            >
+              <h1>3 of 3</h1>
+              <p>What best describes your level of pain?</p>
+              <!-- radial buttons -->
+              <div class="quiz__options">
+                <label for="question-3-option-1">
+                  <input
+                    type="radio"
+                    name="question-3"
+                    id="question-3-option-1"
+                    value="Mild-discomfort"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Pain Scale: Green"
+                  />
+                  <span>Mild discomfort</span>
+                </label>
+
+                <label for="question-3-option-2">
+                  <input
+                    type="radio"
+                    name="question-3"
+                    id="question-3-option-2"
+                    value="Moderate-discomfort"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Pain Scale: Yellow"
+                  />
+                  <span>Moderate discomfort</span>
+                </label>
+
+                <label for="question-3-option-3">
+                  <input
+                    type="radio"
+                    name="question-3"
+                    id="question-3-option-3"
+                    value="Severe-discomfort"
+                    autocomplete="off"
+                  />
+                  <img
+                    src="https://placehold.co/150x150"
+                    alt="Cartoon Pain Scale: Red"
+                  />
+                  <span>Severe discomfort</span>
+                </label>
+              </div>
+              <button
+                class="quiz__submit"
+                data-action="open-next"
+                data-visible="hidden"
+              >
+                claim discount now
+              </button>
+            </div>
+          </div>
+          <footer class="quiz__footer">
+            <div class="quiz__footer-content">
+              <img
+                src="https://cdn.shopify.com/s/files/1/2292/4453/files/jpr5-logo_350x.png?v=1614310439"
+                alt=""
+              />
+              <ul>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Disclaimer</a></li>
+              </ul>
+              <small>&copy; 2024 Lifetones. All Rights Reserved</small>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div data-page="2" data-visible="hidden">
+        <div class="page__body">
+          <header class="pdp__header">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2292/4453/files/jpr5-logo_250x.png?v=1614310439"
+              alt="logo"
+            />
+          </header>
+          <div class="pdp__wrapper">
+            <section id="CTA">
+              <div class="cta__wrapper">
+                <div class="cta__grid">
+                  <div class="cta__grid-slide">
+                    <div class="cta__flex-thumbnails swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/LTUACNewHero1200_29a2e65c-a156-4dff-9b1c-92099907f7c9_100x.jpg?v=1715801135"
+                            alt="Thumbnail 1"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/capsulesmodel1200_70e0ac44-7d3e-4f53-883e-0aec3f8e9b98_100x.jpg?v=1696510615"
+                            alt="Thumbnail 2"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/LT_Caps_Facts_Five_Seals_1200_6187b975-0801-4392-b58b-c70b1dc0d430_100x.jpg?v=1715801160"
+                            alt="Thumbnail 3"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/LifetonesRefundUpdatedMarch231200_2e3b0004-17f7-441c-a7c0-6f85f7debd2c_100x.jpg?v=1715801054"
+                            alt="Thumbnail 4"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cta__flex-main swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/LTUACNewHero1200_29a2e65c-a156-4dff-9b1c-92099907f7c9_500x.jpg?v=1715801135"
+                            alt="Slide 1"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/capsulesmodel1200_70e0ac44-7d3e-4f53-883e-0aec3f8e9b98_500x.jpg?v=1696510615"
+                            alt="Slide 2"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/LT_Caps_Facts_Five_Seals_1200_6187b975-0801-4392-b58b-c70b1dc0d430_500x.jpg?v=1715801160"
+                            alt="Slide 3"
+                          />
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/LifetonesRefundUpdatedMarch231200_2e3b0004-17f7-441c-a7c0-6f85f7debd2c_500x.jpg?v=1715801054"
+                            alt="Slide 4"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cta__flex-benefits">
+                      <ul>
+                        <li><span>Free Shipping</span></li>
+                        <li>Returnless Refunds</li>
+                        <li>Made in the USA</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="cta__grid-selector">
+                    <div class="cta__title">
+                      <h1>Lifetones Uric Acid Support Capsules</h1>
+                      <div class="cta__review">
+                        <p>200 Reviews</p>
+                        <div class="cta__stars">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/2292/4453/files/star_x25.png?v=1626797939"
+                            alt="Stars"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cta__options">
+                      <p>Select quantity</p>
+                      <div class="cta__options-buttons variant-selector">
+                        <label>
+                          <input
+                            type="radio"
+                            name="quantity"
+                            data-price="34.95"
+                            data-price-retail="49.95"
+                            data-savings="15"
+                            data-shipping="+$5.82 Shipping"
+                            data-shipping-badge="cost"
+                            data-destination-url=""
+                            checked
+                          />
+                          <p>1 Bottle</p>
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="quantity"
+                            data-price="26.62"
+                            data-price-retail="149.85"
+                            data-savings="70"
+                            data-shipping="Free Shipping"
+                            data-shipping-badge="free"
+                            data-destination-url=""
+                          />
+                          <p>3 Bottles</p>
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="quantity"
+                            data-price="24.95"
+                            data-price-retail="299.70"
+                            data-savings="150"
+                            data-shipping="Free Shipping"
+                            data-shipping-badge="free"
+                            data-destination-url=""
+                          />
+                          <p>6 Bottles</p>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- <div class="cta__frequency"></div> -->
+                    <div class="cta__price">
+                      <div class="cta__price-left">
+                        <h2 id="price">$34.95</h2>
+                        <p>Per Bottle</p>
+                      </div>
+                      <div class="cta__price-middle">
+                        <p>Retail: <s id="priceRetail">$49.95</s></p>
+                        <p class="saving">
+                          You're Saving <br class="desktop-only" />
+                          <span id="savings">$15</span>
+                        </p>
+                        <small
+                          >Free Shipping <br />
+                          Orders Over $45</small
+                        >
+                      </div>
+                      <div class="cta__price-right">
+                        <div class="cta__shipping-badges" id="shippingBadge">
+                          <div class="shipping__cost-badge" data-type="cost">
+                            <p>
+                              Plus $5.82 <br />
+                              Shipping
+                            </p>
+                          </div>
+                          <div
+                            class="shipping__free-badge"
+                            data-type="free"
+                            data-visible="hidden"
+                          >
+                            <p>
+                              <img src="https://placehold.co/30x30" alt="" />
+                              2 Free <br />
+                              Bonuses
+                            </p>
+                            <p>
+                              <img src="https://placehold.co/30x30" alt="" />
+                              Fast & Free <br />
+                              Shipping
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cta__submit">
+                      <a href="#">Buy Now</a>
+                    </div>
+                    <div class="cta__payment-badges">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/2292/4453/files/card.jpg?v=1626797938"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="Auth">
+              <div class="auth__title">
+                <h2>as seen on</h2>
+                <div class="border-lines"></div>
+              </div>
+              <ul class="auth__logos">
+                <li><img src="https://placehold.co/200x100" alt="Logo" /></li>
+                <li><img src="https://placehold.co/200x100" alt="Logo" /></li>
+                <li><img src="https://placehold.co/200x100" alt="Logo" /></li>
+                <li><img src="https://placehold.co/200x100" alt="Logo" /></li>
+              </ul>
+            </section>
+            <section id="Video">
+              <div class="video__wrapper">
+                <div class="video__cta">
+                  <h3>Advanced All-Natural Formula To...</h3>
+                  <ul>
+                    <li>Relieve joint, muscle and nerve pain</li>
+                    <li>Fight inflammation, muscle tension & fibrosis</li>
+                    <li>Initiate the healing process in the body</li>
+                    <li>Reduce scarring & tissue damage</li>
+                    <li>Promote improved range of motion</li>
+                  </ul>
+                </div>
+                <div class="video__player">
+                  <img src="https://placehold.co/600x375" alt="Video" />
+                </div>
+              </div>
+              <div class="video__seals-wrapper">
+                <h2>Lifetones Uric Acid Support Capsules Promotes Better...</h2>
+                <ul class="video__seals-list">
+                  <li>
+                    <img src="https://placehold.co/100x100" alt="Seal" />
+                    <span>Cardiovascular Health</span>
+                  </li>
+                  <li>
+                    <img src="https://placehold.co/100x100" alt="Seal" />
+                    <span>Cholesterol Levels</span>
+                  </li>
+                  <li>
+                    <img src="https://placehold.co/100x100" alt="Seal" />
+                    <span>Brain Health & Mood</span>
+                  </li>
+                  <li>
+                    <img src="https://placehold.co/100x100" alt="Seal" />
+                    <span>Blood Sugar Levels</span>
+                  </li>
+                  <li>
+                    <img src="https://placehold.co/100x100" alt="Seal" />
+                    <span>Digestive Health</span>
+                  </li>
+                </ul>
+                <a href="#CTA" class="button__cta">View Order Options</a>
+              </div>
+            </section>
+            <section id="Ingredients">
+              <div class="ingredients__facts-wrapper">
+                <div class="ingredients__facts-flex">
+                  <div class="ingredients__facts-left">
+                    <img
+                      src="https://placehold.co/300x300"
+                      alt="Pill Breakdown"
+                    />
+                  </div>
+                  <div class="ingredients__facts-right">
+                    <img
+                      src="https://placehold.co/300x300"
+                      alt="Nutrition Facts Label"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="ingredients__benefits-wrapper">
+                <ul class="ingredients__benefits-grid">
+                  <li class="ingredients__benefits-item-1">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pure_Celery_Seed_Cropped_200x.jpg?v=1665067748"
+                      alt="Celery"
+                    />
+                    <div class="">
+                      <h3>Celery</h3>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
+                  </li>
+                  <li class="ingredients__benefits-item-2">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pure_Nettle_Cropped_200x.jpg?v=1665067749"
+                      alt="Nettle"
+                    />
+                    <div class="">
+                      <h3>Nettle</h3>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
+                  </li>
+                  <li class="ingredients__benefits-item-3">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pure_Birch_Cropped_200x.jpg?v=1665067749"
+                      alt="Birch"
+                    />
+                    <div class="">
+                      <h3>Birch</h3>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
+                  </li>
+                  <li class="grid__gap"><div class="gap"></div></li>
+                  <li class="ingredients__benefits-item-4">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pure_Alfalfa_Cropped_200x.jpg?v=1665067748"
+                      alt="Alfalfa"
+                    />
+                    <div class="">
+                      <h3>Alfalfa</h3>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
+                  </li>
+                  <li class="ingredients__benefits-item-5">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pure_Devil_s_Claw_Cropped_200x.jpg?v=1665067749"
+                      alt="Devil's Claw"
+                    />
+                    <div class="">
+                      <h3>Devil's Claw</h3>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
+                  </li>
+                  <li class="ingredients__benefits-item-6">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2292/4453/files/Pure_Boswellia_Cropped_200x.jpg?v=1665067749"
+                      alt="Boswellia"
+                    />
+                    <div class="">
+                      <h3>Boswellia</h3>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section id="Gifts">
+              <div class="gifts__wrapper">
+                <h2>
+                  Order 6 Bottles <br class="mobile-only" />or 3 Bottles and
+                  <br class="mobile-only" /><u>Get 3 FREE Bonuses!</u>
+                </h2>
+                <ul>
+                  <li>
+                    <div class="gift__card">
+                      <img src="https://placehold.co/250x300" alt="gift 1" />
+                      <h3>Bonus #1</h3>
+                      <p>Lorem</p>
+                    </div>
+                    <div class="price">$29.95</div>
+                    <div class="offer">Today: <span>Free</span></div>
+                  </li>
+                  <li>
+                    <div class="gift__card">
+                      <img src="https://placehold.co/250x300" alt="gift 2" />
+                      <h3>Bonus #2</h3>
+                      <p>Lorem</p>
+                    </div>
+                    <div class="price">$29.95</div>
+                    <div class="offer">Today: <span>Free</span></div>
+                  </li>
+                  <li>
+                    <div class="gift__card">
+                      <img src="https://placehold.co/250x300" alt="gift 3" />
+                      <h3>Bonus #3</h3>
+                      <p>Lorem</p>
+                    </div>
+                    <div class="price">$29.95</div>
+                    <div class="offer">Today: <span>Free</span></div>
+                  </li>
+                </ul>
+                <a href="#CTA" class="button__cta">View Order Options</a>
+              </div>
+            </section>
+            <section id="Shipping">
+              <div class="shipping__wrapper">
+                <div class="shipping__flex">
+                  <img src="https://placehold.co/150x150" alt="" />
+                  <div class="shipping__text-wrapper">
+                    <h2>
+                      Every
+                      <span class="accent__underline">6 Bottle</span>
+                      order <br class="mobile-only" />get
+                      <span class="accent__underline">FREE Shipping</span>
+                      Too!
+                    </h2>
+                    <h4>
+                      *96% of customers Order 6 Bottles
+                      <br class="mobile-only" />(<span class="accent__color"
+                        >Our Recommended Option</span
+                      >)
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="Reviews">
+              <div class="reviews__wrapper">
+                <h2>See How Lifetones Has Helped Others...</h2>
+                <div class="reviews__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-stars">
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                      </div>
+                      <div class="swiper__slide-text">
+                        <p>
+                          "Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Ad nostrum mollitia, quasi unde eos amet
+                          accusantium natus excepturi ut, quas recusandae sint
+                          nisi facilis porro provident consectetur quibusdam
+                          totam? Voluptatibus!"
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-stars">
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                      </div>
+                      <div class="swiper__slide-text">
+                        <p>
+                          "Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Ad nostrum mollitia, quasi unde eos amet
+                          accusantium natus excepturi ut, quas recusandae sint
+                          nisi facilis porro provident consectetur quibusdam
+                          totam? Voluptatibus!"
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-stars">
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                      </div>
+                      <div class="swiper__slide-text">
+                        <p>
+                          "Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Ad nostrum mollitia, quasi unde eos amet
+                          accusantium natus excepturi ut, quas recusandae sint
+                          nisi facilis porro provident consectetur quibusdam
+                          totam? Voluptatibus!"
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-stars">
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                      </div>
+                      <div class="swiper__slide-text">
+                        <p>
+                          "Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Ad nostrum mollitia, quasi unde eos amet
+                          accusantium natus excepturi ut, quas recusandae sint
+                          nisi facilis porro provident consectetur quibusdam
+                          totam? Voluptatibus!"
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-stars">
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                      </div>
+                      <div class="swiper__slide-text">
+                        <p>
+                          "Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Ad nostrum mollitia, quasi unde eos amet
+                          accusantium natus excepturi ut, quas recusandae sint
+                          nisi facilis porro provident consectetur quibusdam
+                          totam? Voluptatibus!"
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-stars">
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                        <img src="https://placehold.co/30x30" alt="" />
+                      </div>
+                      <div class="swiper__slide-text">
+                        <p>
+                          "Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Ad nostrum mollitia, quasi unde eos amet
+                          accusantium natus excepturi ut, quas recusandae sint
+                          nisi facilis porro provident consectetur quibusdam
+                          totam? Voluptatibus!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <small
+                  >All our testimonials are from real people. <br />Individual
+                  results may vary.</small
+                >
+              </div>
+            </section>
+            <section id="AuthFAQ">
+              <div class="auth__wrapper">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/2292/4453/files/Dr_Gavaldon_Headshot_Cropped_x300.jpg?v=1657653121"
+                  alt="Dr. Gavaldon"
+                />
+                <div class="auth__wrapper-text">
+                  <h3>Dr. Ignacio Gavaldon</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur velit blanditiis, commodi dignissimos expedita quasi
+                    eum doloribus, quae asperiores voluptas perspiciatis sequi?
+                    Quo saepe iusto commodi doloribus aliquid, adipisci illum
+                    porro voluptatum perspiciatis sunt molestias.
+                  </p>
+                </div>
+              </div>
+              <a href="#CTA" class="button__cta">View Order Options</a>
+              <div class="faq__wrapper">
+                <h2>Frequently Asked Questions:</h2>
+                <div class="faq__options">
+                  <label>
+                    <input type="checkbox" name="faq" id="lagTime" />
+                    <div class="faq__label">
+                      <div class="animated__plus"></div>
+                      <p>
+                        How long after starting Lifetones<br
+                          class="desktop-only"
+                        />
+                        can I expect to experience results?
+                      </p>
+                    </div>
+                    <div class="faq__content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, corrupti.
+                      </p>
+                    </div>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="faq" id="interactions" />
+                    <div class="faq__label">
+                      <div class="animated__plus"></div>
+                      <p>Does Lifetones interact with other medications?</p>
+                    </div>
+                    <div class="faq__content">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Porro, eum.
+                      </p>
+                    </div>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="faq" id="sideEffect" />
+                    <div class="faq__label">
+                      <div class="animated__plus"></div>
+                      <p>Are there any side effects?</p>
+                    </div>
+                    <div class="faq__content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Iste, perferendis!
+                      </p>
+                    </div>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="faq" id="quantity" />
+                    <div class="faq__label">
+                      <div class="animated__plus"></div>
+                      <p>What is the recommended daily dosage?</p>
+                    </div>
+                    <div class="faq__content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Aut, iure.
+                      </p>
+                    </div>
+                  </label>
+                  <label>
+                    <input type="checkbox" name="faq" id="food" />
+                    <div class="faq__label">
+                      <div class="animated__plus"></div>
+                      <p>Should I take it with food?</p>
+                    </div>
+                    <div class="faq__content">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Non, illum.
+                      </p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </section>
+          </div>
+          <footer class="pdp__footer">
+            <div class="footer__wrapper">
+              <div class="footer__text">
+                <p>Lifetones&trade;</p>
+                <p>1515 Detrick Ave, Deland Florida 32724</p>
+                <p>
+                  Customer Support: <a href="tel:18445648315">1-844-564-8315</a>
+                </p>
+              </div>
+              <hr />
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!-- Dialog Modal -->
+      <dialog id="modal">
+        <img
+          src="https://picsum.photos/1920/1080"
+          alt=""
+          class="modal__background"
+        />
+        <div class="wrapper">
+          <div class="modal__header">
+            <p class="modal__header-text">Would You Like</p>
+            <p class="modal__header-discount">64% OFF</p>
+            <p class="modal__header-text">Your First Purchase?</p>
+          </div>
+          <img src="https://placehold.co/300x350" alt="Product" />
+          <button data-action="close-modal" class="dialog__close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </button>
+          <a href="#" class="modal__exit-link">Claim Discount Now</a>
+          <button data-action="goto-close" data-target-page="1">Return</button>
+        </div>
+      </dialog>
+    </main>
+  </body>
+</html>
