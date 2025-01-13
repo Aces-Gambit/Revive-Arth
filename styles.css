@@ -703,7 +703,9 @@ main {
   column-gap: 4rem;
 }
 .auth__logos li{}
-.auth__logos li img{}
+.auth__logos li img{
+  max-width: 250px;
+}
 /* END */
 
 /* PDP Video */
