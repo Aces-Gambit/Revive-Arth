@@ -196,7 +196,7 @@ main {
 }
 .quiz__wrapper{
   height: min(650px, 80vh);
-  width: min(615px, 100vw);
+  width: min(650px, 100vw);
   display: flex;
   margin: 0 auto;
   margin-block: 1.125rem .125rem;
@@ -321,7 +321,7 @@ main {
 @media screen and (max-width: 900px){
   .quiz__wrapper{
     height: min(650px, 80vh);
-    width: min(615px, 100vw);
+    width: min(650px, 100vw);
   }
 }
 @media screen and (max-width: 600px){
@@ -341,7 +341,7 @@ main {
   }
   .quiz__wrapper{
     height: min(650px, 67vh);
-    width: min(615px, 100vw);
+    width: min(650px, 100vw);
   } 
 }
 /* END */
