@@ -963,10 +963,13 @@ main {
   padding: .5rem;
   border-radius: var(--border-radius-sm);
   text-align: center;
-  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
 }
-.gift__card img{}
+.gift__card img{
+  border-radius: var(--border-radius-sm);
+  box-shadow: inset 0 0 8px 2px rgba(255, 255, 255, .1);
+}
 .gift__card h3{
   color: var(--color-tertiary-lightest);
 }
@@ -986,6 +989,7 @@ main {
 .gifts__wrapper ul li .offer span{
   color: var(--color-warning-lightest);
   text-transform: uppercase;
+  text-shadow: 0 0 1px black;
 }
 /* END */
 
