@@ -327,7 +327,9 @@
                     </div>
                     <div class="cta__flex-benefits">
                       <ul>
-                        <li><span>Free Shipping</span></li>
+                        <li>
+                          <span id="shippingBenefits">Fast Shipping</span>
+                        </li>
                         <li>Returnless Refunds</li>
                         <li>Made in the USA</li>
                       </ul>
@@ -358,6 +360,7 @@
                             data-savings="15"
                             data-shipping="+$5.82 Shipping"
                             data-shipping-badge="cost"
+                            data-shipping-benefits="Fast Shipping"
                             data-destination-url=""
                             checked
                           />
@@ -372,6 +375,7 @@
                             data-savings="70"
                             data-shipping="Free Shipping"
                             data-shipping-badge="free"
+                            data-shipping-benefits="Free Shipping"
                             data-destination-url=""
                           />
                           <p>3 Bottles</p>
@@ -385,6 +389,7 @@
                             data-savings="150"
                             data-shipping="Free Shipping"
                             data-shipping-badge="free"
+                            data-shipping-benefits="Free Shipping"
                             data-destination-url=""
                           />
                           <p>6 Bottles</p>
@@ -485,11 +490,11 @@
                 <div class="video__cta">
                   <h3>Advanced All-Natural Formula To...</h3>
                   <ul>
-                    <li>Relieve joint, muscle and nerve pain</li>
-                    <li>Fight inflammation, muscle tension & fibrosis</li>
-                    <li>Initiate the healing process in the body</li>
-                    <li>Reduce scarring & tissue damage</li>
-                    <li>Promote improved range of motion</li>
+                    <li>Relieve joint, muscle, and nerve discomfort</li>
+                    <li>Fight Inflammation and Stiffness</li>
+                    <li>Detox uric acid crystals</li>
+                    <li>Restore energy levels</li>
+                    <li>Improve sleep</li>
                   </ul>
                 </div>
                 <div class="video__player">
@@ -501,23 +506,23 @@
                 <ul class="video__seals-list">
                   <li>
                     <img src="https://placehold.co/100x100" alt="Seal" />
-                    <span>Cardiovascular Health</span>
+                    <span>Joint Health</span>
                   </li>
                   <li>
                     <img src="https://placehold.co/100x100" alt="Seal" />
-                    <span>Cholesterol Levels</span>
+                    <span>Body Alkalinity</span>
                   </li>
                   <li>
                     <img src="https://placehold.co/100x100" alt="Seal" />
-                    <span>Brain Health & Mood</span>
+                    <span>Sleep & Mood</span>
                   </li>
                   <li>
                     <img src="https://placehold.co/100x100" alt="Seal" />
-                    <span>Blood Sugar Levels</span>
+                    <span>Energy Levels</span>
                   </li>
                   <li>
                     <img src="https://placehold.co/100x100" alt="Seal" />
-                    <span>Digestive Health</span>
+                    <span>Muscle Health</span>
                   </li>
                 </ul>
                 <a href="#CTA" class="button__cta">View Order Options</a>
@@ -538,7 +543,7 @@
                     <ul class="ingredient__list">
                       <li>Celery</li>
                       <li>Nettle</li>
-                      <li>Birch</li>
+                      <li>Birch & Willow</li>
                       <li>Alfalfa</li>
                       <li>Devil's Claw</li>
                       <li>Boswellia</li>
@@ -561,7 +566,7 @@
                     />
                     <div class="">
                       <h3>Celery</h3>
-                      <h4>Lorem, ipsum.</h4>
+                      <h4>Blood Sugar Regulation</h4>
                     </div>
                   </li>
                   <li class="ingredients__benefits-item-2">
@@ -571,7 +576,7 @@
                     />
                     <div class="">
                       <h3>Nettle</h3>
-                      <h4>Lorem, ipsum.</h4>
+                      <h4>Chlorophyll & Nutrient Rich</h4>
                     </div>
                   </li>
                   <li class="ingredients__benefits-item-3">
@@ -580,8 +585,8 @@
                       alt="Birch"
                     />
                     <div class="">
-                      <h3>Birch</h3>
-                      <h4>Lorem, ipsum.</h4>
+                      <h3>Birch & Willow</h3>
+                      <h4>Reduced Joint Pain</h4>
                     </div>
                   </li>
                   <li class="grid__gap"><div class="gap"></div></li>
@@ -592,7 +597,7 @@
                     />
                     <div class="">
                       <h3>Alfalfa</h3>
-                      <h4>Lorem, ipsum.</h4>
+                      <h4>Reduced Muscle Soreness</h4>
                     </div>
                   </li>
                   <li class="ingredients__benefits-item-5">
@@ -602,7 +607,7 @@
                     />
                     <div class="">
                       <h3>Devil's Claw</h3>
-                      <h4>Lorem, ipsum.</h4>
+                      <h4>Anti-Inflammatory</h4>
                     </div>
                   </li>
                   <li class="ingredients__benefits-item-6">
@@ -612,7 +617,7 @@
                     />
                     <div class="">
                       <h3>Boswellia</h3>
-                      <h4>Lorem, ipsum.</h4>
+                      <h4>Anti-Oxidant</h4>
                     </div>
                   </li>
                 </ul>
@@ -621,8 +626,14 @@
             <section id="Gifts">
               <div class="gifts__wrapper">
                 <h2>
-                  Order 6 Bottles <br class="mobile-only" />or 3 Bottles and
-                  <br class="mobile-only" /><u>Get 3 FREE Bonuses!</u>
+                  <span
+                    >Order <span class="text-accent-yellow">3 Bottles</span> and
+                    <u>Get a FREE Bonus!</u></span
+                  ><br />
+                  <span
+                    >Order <span class="text-accent-green">6 Bottles</span> and
+                    <u>Get 2 FREE Bonuses!</u></span
+                  >
                 </h2>
                 <ul>
                   <li>
@@ -643,15 +654,6 @@
                     <div class="price">$29.95</div>
                     <div class="offer">Today: <span>Free</span></div>
                   </li>
-                  <li>
-                    <div class="gift__card">
-                      <img src="https://placehold.co/250x300" alt="gift 3" />
-                      <h3>Bonus #3</h3>
-                      <p>Lorem</p>
-                    </div>
-                    <div class="price">$29.95</div>
-                    <div class="offer">Today: <span>Free</span></div>
-                  </li>
                 </ul>
                 <a href="#CTA" class="button__cta">View Order Options</a>
               </div>
@@ -666,13 +668,13 @@
                   <div class="shipping__text-wrapper">
                     <h2>
                       Every
-                      <span class="accent__underline">6 Bottle</span>
-                      order <br class="mobile-only" />get
+                      <span class="accent__underline">3 & 6 Bottle</span>
+                      order <br class="mobile-only" />gets
                       <span class="accent__underline">FREE Shipping</span>
                       Too!
                     </h2>
                     <h4>
-                      *96% of customers Order 6 Bottles
+                      *74% of customers Order 6 Bottles
                       <br class="mobile-only" />(<span class="accent__color"
                         >Our Recommended Option</span
                       >)
@@ -721,7 +723,7 @@
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-title"><p>Carole H.</p></div>
                       <div class="swiper__slide-stars">
                         <img
                           src="https://cdn.shopify.com/s/files/1/2292/4453/files/Lifetones_gold_star_30x.png?v=1736951331"
@@ -746,16 +748,16 @@
                       </div>
                       <div class="swiper__slide-text">
                         <p>
-                          "Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Ad nostrum mollitia, quasi unde eos amet
-                          accusantium natus excepturi ut, quas recusandae sint
-                          nisi facilis porro provident consectetur quibusdam
-                          totam? Voluptatibus!"
+                          "My hands are weaving again thanks to lifetones. From
+                          pain that kept me away from my loom to working again,
+                          what a miracle. Having such relief, inspires me to
+                          hope for further improvement and at a minimum no
+                          further damage."
                         </p>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-title"><p>Grant H.</p></div>
                       <div class="swiper__slide-stars">
                         <img
                           src="https://cdn.shopify.com/s/files/1/2292/4453/files/Lifetones_gold_star_30x.png?v=1736951331"
@@ -780,16 +782,15 @@
                       </div>
                       <div class="swiper__slide-text">
                         <p>
-                          "Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Ad nostrum mollitia, quasi unde eos amet
-                          accusantium natus excepturi ut, quas recusandae sint
-                          nisi facilis porro provident consectetur quibusdam
-                          totam? Voluptatibus!"
+                          "I was getting gout attacks 2 times a year since 2006.
+                          Doctors gave me steroids which helped but never cured.
+                          Since I've been taking this product I've had no
+                          problems."
                         </p>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-title"><p>Wendy M.</p></div>
                       <div class="swiper__slide-stars">
                         <img
                           src="https://cdn.shopify.com/s/files/1/2292/4453/files/Lifetones_gold_star_30x.png?v=1736951331"
@@ -814,16 +815,15 @@
                       </div>
                       <div class="swiper__slide-text">
                         <p>
-                          "Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Ad nostrum mollitia, quasi unde eos amet
-                          accusantium natus excepturi ut, quas recusandae sint
-                          nisi facilis porro provident consectetur quibusdam
-                          totam? Voluptatibus!"
+                          "I am very happy with the results of this product.
+                          Both my husband and son are taking it to control their
+                          Uric acid levels. The ease of ordering and fast
+                          delivery is wonderful!!"
                         </p>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-title"><p>Andrew S.</p></div>
                       <div class="swiper__slide-stars">
                         <img
                           src="https://cdn.shopify.com/s/files/1/2292/4453/files/Lifetones_gold_star_30x.png?v=1736951331"
@@ -848,16 +848,18 @@
                       </div>
                       <div class="swiper__slide-text">
                         <p>
-                          "Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Ad nostrum mollitia, quasi unde eos amet
-                          accusantium natus excepturi ut, quas recusandae sint
-                          nisi facilis porro provident consectetur quibusdam
-                          totam? Voluptatibus!"
+                          "Lifetones works fantastic for me. I'm in my 60's and
+                          I take a maintenance dose of one capsule a day and my
+                          inflamation is gone in my feet, hips, shoulders, neck
+                          and ribs. Nearly all of my aches and pains have
+                          disappeared. I haven't needed to take any Aleve, Advil
+                          or any other pain relievers since starting Lifetones.
                         </p>
+                        <p>Thank you Lifetones."</p>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="swiper__slide-title"><p>Ann E.</p></div>
+                      <div class="swiper__slide-title"><p>Evana G.</p></div>
                       <div class="swiper__slide-stars">
                         <img
                           src="https://cdn.shopify.com/s/files/1/2292/4453/files/Lifetones_gold_star_30x.png?v=1736951331"
@@ -882,11 +884,8 @@
                       </div>
                       <div class="swiper__slide-text">
                         <p>
-                          "Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Ad nostrum mollitia, quasi unde eos amet
-                          accusantium natus excepturi ut, quas recusandae sint
-                          nisi facilis porro provident consectetur quibusdam
-                          totam? Voluptatibus!"
+                          "Lifetones is the best anti inflammatory supplement
+                          for arthritis. It really helps!"
                         </p>
                       </div>
                     </div>
@@ -908,14 +907,37 @@
                   alt="Dr. Gavaldon"
                 />
                 <div class="auth__wrapper-text">
-                  <h3>Dr. Ignacio Gavaldon</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tenetur velit blanditiis, commodi dignissimos expedita quasi
-                    eum doloribus, quae asperiores voluptas perspiciatis sequi?
-                    Quo saepe iusto commodi doloribus aliquid, adipisci illum
-                    porro voluptatum perspiciatis sunt molestias.
-                  </p>
+                  <h4>
+                    <i>It's Like A Miracle In A Bottle</i>
+                  </h4>
+                  <div class="column__layout">
+                    <p>
+                      "My patients are getting the relief they need in an
+                      all-natural and quick delivery system.
+                    </p>
+                    <p>
+                      I recommend this to all of my patients because of how
+                      amazing for the body this formula is. It's like a little
+                      miracle in a bottle.
+                    </p>
+                    <p>
+                      There isn't anyone who can't benefit in some way from
+                      adding this to their routine.
+                    </p>
+                    <p>
+                      For my patients with an excessive build up of uric acid,
+                      they have said they can literally feel the crystals
+                      melting away and flushing from their joints within days of
+                      using this.
+                    </p>
+                    <p>
+                      Lifetones has been a trusted name in offering uric acid
+                      support for years and they are the only recommendation
+                      that I offer for natural, long-lasting relief."
+                    </p>
+                  </div>
+                  <h5>Dr. Ignacio Gavaldon, DC</h5>
+                  <h6>New Smyrna Beach, FL</h6>
                 </div>
               </div>
               <a href="#CTA" class="button__cta">View Order Options</a>
@@ -926,17 +948,20 @@
                     <input type="checkbox" name="faq" id="lagTime" />
                     <div class="faq__label">
                       <div class="animated__plus"></div>
-                      <p>
-                        How long after starting Lifetones<br
-                          class="desktop-only"
-                        />
-                        can I expect to experience results?
-                      </p>
+                      <p>What's the best way to take Lifetones?</p>
                     </div>
                     <div class="faq__content">
+                      <p>Take 2 capsules with a full glass of water.</p>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Necessitatibus, corrupti.
+                        Repeat dosage up to 3 times daily until desired results
+                        are achieved.
+                      </p>
+                      <p>Drink extra water throughout the day.</p>
+                      <p>
+                        If you only take one dose per day, it should be in the
+                        evening before bed. Lifetones Uric Acid Support can be
+                        taken with or without food, but for best results, take
+                        it one hour before a meal.
                       </p>
                     </div>
                   </label>
@@ -944,12 +969,21 @@
                     <input type="checkbox" name="faq" id="interactions" />
                     <div class="faq__label">
                       <div class="animated__plus"></div>
-                      <p>Does Lifetones interact with other medications?</p>
+                      <p>Who should not take Lifetones?</p>
                     </div>
                     <div class="faq__content">
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Porro, eum.
+                        <strong>Precautions:</strong>
+                        <i>
+                          Use only as directed. Consult your healthcare
+                          practitioner before use. Do not use in combination
+                          with blood thinners, such as Warfarin. Do not use if
+                          allergic or sensitive to any of the ingredients. Do
+                          not use if you have any serious medical condition or
+                          use any medications. Do not use if you are pregnant or
+                          nursing. Read the included product insert for more
+                          information.
+                        </i>
                       </p>
                     </div>
                   </label>
@@ -957,12 +991,34 @@
                     <input type="checkbox" name="faq" id="sideEffect" />
                     <div class="faq__label">
                       <div class="animated__plus"></div>
-                      <p>Are there any side effects?</p>
+                      <p>What is your Returnless Refunds policy?</p>
                     </div>
                     <div class="faq__content">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Iste, perferendis!
+                        With our world-famous Returnless Refunds, you can shop
+                        with total confidence. Lifetones is one of the only
+                        companies in America that does not force you to return
+                        your products. We do this to make life easy for you, and
+                        because we are certain that you're going to love our
+                        products.
+                      </p>
+                      <p>
+                        We offer a 100% lifetime money-back guarantee. If
+                        Lifetones doesn't help you find relief, it is on us. The
+                        worst-case scenario is that you end up with a free
+                        product that you can give to a friend!
+                      </p>
+                      <p>
+                        <i>
+                          **There are only a few common-sense disclaimers. We
+                          reserve the right to ask for returns on orders that
+                          contain two or more of the same item. Limit one refund
+                          per household.<br />
+                          We reserve the right to request manual product returns
+                          if we suspect refund fraud, return fraud, or drop
+                          shipping activity. In these rare cases, the product
+                          must be returned to us before we will issue a refund.
+                        </i>
                       </p>
                     </div>
                   </label>
@@ -970,12 +1026,27 @@
                     <input type="checkbox" name="faq" id="quantity" />
                     <div class="faq__label">
                       <div class="animated__plus"></div>
-                      <p>What is the recommended daily dosage?</p>
+                      <p>Is this a one-time payment?</p>
                     </div>
                     <div class="faq__content">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Aut, iure.
+                        Yes, this is a one-time payment. This is NOT a
+                        Subscription
+                      </p>
+                      <p>
+                        Rest assured, we will not auto bill your card for any
+                        future order unless and until you place that order
+                        yourself.
+                      </p>
+                      <p>
+                        If at any time you would like to confirm the nature of
+                        your one time order, feel free to call out customer
+                        support line where we can review your order with you
+                        based on your needs.
+                      </p>
+                      <p>
+                        Lifetones Customer Support:
+                        <a href="tel:1-844-564-8315">1-844-564-8315</a>
                       </p>
                     </div>
                   </label>
@@ -983,12 +1054,13 @@
                     <input type="checkbox" name="faq" id="food" />
                     <div class="faq__label">
                       <div class="animated__plus"></div>
-                      <p>Should I take it with food?</p>
+                      <p>Are the Capsules vegan-friendly and gluten-free?</p>
                     </div>
                     <div class="faq__content">
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Non, illum.
+                        Yes, our Lifetones Capsules are vegan-friendly,
+                        gluten-free, sugar-free, dairy-free, soy-free, and 100%
+                        all-natural.
                       </p>
                     </div>
                   </label>
@@ -1019,17 +1091,20 @@
       <!-- Dialog Modal -->
       <dialog id="modal">
         <img
-          src="https://picsum.photos/1920/1080"
+          src="https://cdn.shopify.com/s/files/1/2292/4453/files/center_more_open.png?v=1736960611"
           alt=""
           class="modal__background"
         />
         <div class="wrapper">
           <div class="modal__header">
             <p class="modal__header-text">Would You Like</p>
-            <p class="modal__header-discount">64% OFF</p>
+            <p class="modal__header-discount">58% OFF</p>
             <p class="modal__header-text">Your First Purchase?</p>
           </div>
-          <img src="https://placehold.co/300x350" alt="Product" />
+          <img
+            src="https://cdn.shopify.com/s/files/1/2292/4453/files/uric_acid_support_with_celery.png?v=1736960662"
+            alt="Product"
+          />
           <button data-action="close-modal" class="dialog__close">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1043,8 +1118,9 @@
               />
             </svg>
           </button>
-          <a href="#" class="modal__exit-link">Claim Discount Now</a>
-          <button data-action="goto-close" data-target-page="1">Return</button>
+          <button data-action="close-modal" class="modal__exit-link">
+            Claim Discount Now
+          </button>
         </div>
       </dialog>
     </main>

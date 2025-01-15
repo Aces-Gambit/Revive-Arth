@@ -382,6 +382,16 @@ main {
 .button__cta:hover{
   background-color: var(--color-tertiary-light);
 }
+.text-accent-yellow{
+  color: var(--color-warning-lightest);
+  font-weight: 700;
+  text-shadow: 0 0 1px black;
+}
+.text-accent-green{
+  color: var(--color-success-lightest);
+  font-weight: 700;
+  text-shadow: 0 0 1px black;
+}
 /* END */
 
 /* PDP CTA */
@@ -825,7 +835,7 @@ main {
   padding-block: calc(100/(6) * 1%);
 }
 .ingredient__list li:not(:last-child){
-  border-bottom: 1px solid var(--color-neutral);
+  border-bottom: 1px solid var(--color-tertiary);
 }
 
 .ingredients__facts-left img,
@@ -848,6 +858,7 @@ main {
                         "gap gap gap"
                         "img4 img5 img6"
                         "info4 info5 info6";
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
   justify-content: space-between;
   padding: 0;
   width: 1000px;
@@ -857,6 +868,7 @@ main {
 }
 .ingredients__benefits-grid li img{
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+  margin-inline: auto;
 }
 .grid__gap .gap{
   height: 2rem;
@@ -936,7 +948,7 @@ main {
 .gifts__wrapper h2:first-of-type{
   font-size: var(--font-size-2xl);
   font-weight: 500;
-  max-width: 25ch;
+  max-width: 34ch;
   text-align: center;
 }
 .gifts__wrapper ul{
@@ -1075,6 +1087,7 @@ main {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   cursor: pointer;
+  height: auto;
 }
 .reviews__wrapper .swiper__slide-title{
   font-weight: 700;
@@ -1114,9 +1127,11 @@ main {
 }
 .auth__wrapper img{}
 .auth__wrapper-text{
-  max-width: 40ch;
+  max-width: 56ch;
 }
-.auth__wrapper-text h3{
+.column__layout{
+}
+.auth__wrapper-text h4{
   font-size: var(--font-size-2xl);
   font-weight: 500;
   text-align: left;
@@ -1126,6 +1141,7 @@ main {
   font-size: var(--font-size-md);
   font-weight: 400;
   text-align: left;
+  margin-bottom: 1rem;
 }
 .faq__wrapper{
   margin-top: 2rem;
@@ -1623,6 +1639,10 @@ dialog .wrapper{
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.modal__exit-link:hover{
+  background-color: var(--color-info);
 }
 /* END */
 .mobile-only{
