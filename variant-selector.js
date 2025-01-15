@@ -7,6 +7,8 @@ function updateElement(id, value) {
       }else if (id === 'savings'){
         element.textContent = `$${parseFloat(value).toFixed(0)}`;
       }else if (id === 'destinationUrl') {
+        console.log(element);
+        console.log(value);
         element.href = value;
       }else if ( id ==='shippingBadge'){
         Array.from(element.children).forEach(child => {
