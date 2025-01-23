@@ -506,7 +506,25 @@
                   </ul>
                 </div>
                 <div class="video__player">
-                  <img src="https://placehold.co/600x375" alt="Video" />
+                  <script
+                    src="https://fast.wistia.com/player.js"
+                    async
+                  ></script>
+                  <script
+                    src="https://fast.wistia.com/embed/c3slqaq5xu.js"
+                    async
+                    type="module"
+                  ></script>
+                  <style>
+                    wistia-player[media-id="c3slqaq5xu"]:not(:defined) {
+                      background: center / contain no-repeat
+                        url("https://fast.wistia.com/embed/medias/c3slqaq5xu/swatch");
+                      display: block;
+                      filter: blur(5px);
+                      padding-top: 62.5%;
+                    }
+                  </style>
+                  <wistia-player media-id="c3slqaq5xu"></wistia-player>
                 </div>
               </div>
               <div class="video__seals-wrapper">

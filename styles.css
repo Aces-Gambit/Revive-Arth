@@ -760,7 +760,9 @@ main {
   padding-bottom: .5rem;
   border-bottom: 1px solid var(--color-neutral-lightest);
 }
-.video__player{}
+.video__player{
+  max-width: min(600px, 100%);
+}
 .video__seals-wrapper{
   display: flex;
   flex-direction: column;
@@ -1829,6 +1831,7 @@ dialog .wrapper{
   }
   .ingredients__benefits-grid{
     grid-template-columns: 1fr 1fr;
+    gap: .5rem;
     grid-template-areas: 
     "img1 img2"
     "info1 info2"
@@ -1838,7 +1841,7 @@ dialog .wrapper{
     "info5 info6";
   }
   .grid__gap{
-    display: none;
+    display: none !important;
   }
   .gifts__wrapper ul{
     display: flex;
